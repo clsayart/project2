@@ -1,0 +1,14 @@
+<h2>pets</h2>
+
+
+{{#each pets}}
+
+    <p>{{this.nickname}}</p>
+    <a href="/pets/{{this._id}}">See Details</a>
+    <a href="/pets/delete/{{this._id}}">delete this pet</a>
+    <a href="/pets/edit/{{this._id}}">edit this pet</a>
+    
+    
+{{/each}}
+
+<a href="/pets/new">Add a friend!</a>

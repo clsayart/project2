@@ -1,0 +1,14 @@
+<h2>friends</h2>
+
+
+{{#each friends}}
+
+    <p>{{this.name}}</p>
+    <a href="/friends/{{this._id}}">See Details</a>
+    <a href="/friends/delete/{{this._id}}">delete this friend</a>
+    <a href="/friends/edit/{{this._id}}">edit this friend</a>
+    
+    
+{{/each}}
+
+<a href="/friends/new">Add a friend!</a>

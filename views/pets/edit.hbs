@@ -1,0 +1,15 @@
+<h2>Edit the pet</h2>
+
+<form method="post" action="/pets/edit/{{pet._id}}" class="form">
+    <label for="nickname">nickname</label>
+    <input class="input" type="text" id="nickname" name="nickname" value={{pet.nickname}} >
+     <label for="select-pet">type</label>
+     <select id="select-pet" name="pet" class="input">
+        <option value="cat">cat</option>
+        <option value="dog">dog</option>
+        <option value="rabbit">rabbit</option>
+        <option value="horse">horse</option>
+    </select>
+    
+    <button class="btn">ok !</button>
+</form>
